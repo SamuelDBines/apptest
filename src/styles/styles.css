@@ -1,0 +1,15 @@
+.formLabels {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-left: 12px;
+  display: block;
+}
+.formFields {
+  border-bottom: 2px solid black !important;
+  margin-bottom: 8px;
+}
+.timeAndDate {
+      
+      display: inline;
+      width: 49%;
+}
