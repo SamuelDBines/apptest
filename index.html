@@ -19,8 +19,71 @@
       </div>
       <div class="app-content">
         <div class="app-section">
-          <div id="app" class="app-section">
-              <form-component > </form-component>            
+          <div class="app-section">
+            <a href="page2.html"> test </a>
+            <form id="form1">
+              <div id="shipDiv" data-role="fieldcontain">
+                <label class="formLabels" for="name">Restraunt Name *</label>
+                <input class="app-input formFields" id="name" name="name" type="text" placeholder="Restraunt Name" required />
+              </div>
+              <div id="stateDiv" data-role="fieldcontain">
+                <label class="formLabels" id="stateLabel" for="type">Restraunt Type*</label>
+                <select  class="app-input formFields" id="type" name="type" tabindex="2" placeholder="Selecet one" required>
+                  <option value="Fast Food">Fast Food</option>
+                  <option value="Sea Food">Sea Food</option>
+                  <option value="Vegitarian">Vegitarian</option>
+                  <option value="Meat Place">Meat Place</option>
+                  <option value="Buffet">Buffet</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div id="fnameDiv" data-role="fieldcontain">
+                <label class="formLabels" for="date" id="fnameLabel" >Date and Time of Visit</label>
+                <input class="app-input timeAndDate" id="date" name="date" type="date" required/>
+                <input class="app-input timeAndDate" id="time" name="time" type="time" required />
+              </div>
+              <div id="fnameDiv" data-role="fieldcontain">
+                <label class="formLabels" for="cost"  >Average meal cost (PP)  </label>
+                
+                <input class="app-input formFields" id="cost" name="cost" type="number" required/>
+              </div>
+              <div id="fnameDiv" data-role="fieldcontain">
+                <label class="formLabels" for="service"  > Service Rating </label>
+            
+                  <input type="radio" name="service" value="1"> Need to improve 
+                  <input type="radio" name="service" value="2"> OKAY
+                  <input type="radio" name="service" value="3"> Good
+                  <input type="radio" name="service" value="4"> Excellent
+              </div>
+              <div id="fnameDiv" data-role="fieldcontain">
+                <label class="formLabels" for="Cleanliness"  > Cleanliness Rating </label>
+            
+                  <input type="radio" name="Cleanliness" value="1"> Need to improve 
+                  <input type="radio" name="Cleanliness" value="2"> OKAY
+                  <input type="radio" name="Cleanliness" value="3"> Good
+                  <input type="radio" name="Cleanliness" value="4"> Excellent
+              </div>
+              <div id="fnameDiv" data-role="fieldcontain">
+                <label class="formLabels" for="quality"  > Food Quality Rating </label>
+            
+                  <input type="radio" name="quality" value="1"> Need to improve 
+                  <input type="radio" name="quality" value="2"> OKAY
+                  <input type="radio" name="quality" value="3"> Good
+                  <input type="radio" name="quality" value="4"> Excellent
+              </div>
+              
+              <div id="shipDiv" data-role="fieldcontain">
+                <label class="formLabels" for="reporter">Reporter Name *</label>
+                <input class="app-input formFields" id="name" name="reporter" type="text" placeholder="Reporter Name" required />
+              </div>
+              <div id="shipDiv" data-role="fieldcontain">
+                <label class="formLabels" for="reporter">Notes</label>
+                <textArea class="app-input formFields" id="notes" name="notes" placeholder="Notes">  </textArea>
+              </div>
+              <div id="submitDiv" data-role="fieldcontain">
+                <input type="submit" value="Submit Claim" data-inline="true"/>
+              </div>
+            </form>
           </div>
           <div class="app-button" data-target="page2">Go to Page 2</div>
         </div>
@@ -59,7 +122,7 @@
     </script>
    
     <script src="src/component/Form.js"></script>
-      <script src="src/component/Input.js"></script>
+       
          <script src="src/component/app.js"></script>
   </body>
 </html>
